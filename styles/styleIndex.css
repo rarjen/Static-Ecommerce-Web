@@ -1,0 +1,279 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;400;900&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+/* Style navbar */
+a{
+    text-decoration: none;
+    color: black;
+}
+.bold {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 900;
+}
+.regular {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+}
+.thin{
+    font-family: 'Roboto', sans-serif;
+    font-weight: 100;
+}
+.container{
+    display: flex;
+    flex-direction: column;
+    /* height: 100%; */
+}
+.navbar{
+    display: flex;
+    flex: auto;
+    /* position: fixed; */
+    width: 100%;
+    box-shadow: 1px 1px 1px 1px rgba(31, 48, 58, 1);
+}
+.navbarcontent{
+    padding: 15px;
+    display: flex;
+    width: 90%;
+    margin: 0 auto;
+    justify-content: space-between;
+}
+.user{
+    width: 50%;
+}
+.account{
+    width: 30%;
+}
+.user, .account{
+    /* display: inline-block; */
+    display: flex;
+    font-size: 14px;
+    font-weight: 400;
+}
+.user ul li {
+    text-align: center;
+    list-style: none;
+    display: inline-flex;
+    margin-left: 10px;
+}
+.user ul li a:hover{
+    transition: .3s;
+    transform: scale(1.1);
+    color: greenyellow;
+}
+.account ul li {
+    text-align: center;
+    list-style: none;
+    display: inline-flex;
+    margin-left: 15px;
+}
+.account ul li a:hover{
+    transition: .3s;
+    transform: scale(1.1);
+    color: greenyellow;
+}
+span{
+    word-spacing: 5px;
+}
+/* Style Navbar End */
+/* Style Header */
+.header{
+    flex: auto;
+    padding: 20px;
+    /* position: absolute; */
+    /* margin-top: 47px; */
+    display: flex;
+    width: 100%;
+    box-shadow: 1px 1px 1px 1px rgba(0, 0, 0, .1);
+}
+.headercontent {
+    display: flex;
+    width: 90%;
+    margin: 0 auto;
+    justify-content: space-between;
+    align-items: baseline;
+}
+.headercontent h1{
+    font-size: 35px;
+}
+.label{
+    width: 30%;
+    justify-content: flex-start;
+    cursor: pointer;
+}
+.label p{
+    color: black;
+}
+.searchbar{
+    width: 50%;
+    display: inline-flex;
+    justify-content: flex-end;
+}
+.searchbar > div{
+    text-align: center;
+    margin: 2px;
+}
+.cat select{
+    border-radius: 50px;
+    padding: 10px;
+    cursor: pointer;
+    width: 200px;
+    height: 50px;
+}
+.search input{
+    border-radius: 50px;
+    width: 200px;
+    padding: 10px;
+    height: 50px;
+}
+.search input:hover{
+    transition: .3s;
+}
+.search input[type=text]{
+    font-size: 16px
+}
+.buttonsearch{
+    background-color: black;
+    color: white;
+    font-size: 16px;
+    width: 130px;
+    height: 50px;
+    line-height: 50px;
+    border-radius: 30px;
+    cursor: pointer;
+}
+.buttonsearch:hover{
+    color: black;
+    transition:  .3s;
+    background-color: greenyellow;
+}
+/* Style header end */
+/* Style page */
+.page{
+    width: 100%;
+    display: flex;
+    background-color: rgba(0, 0, 0, .9);
+}
+.pagecontent{
+    display: inline-flex;
+    width: 90%;
+    margin: 0 auto;
+    padding: 10px;
+    justify-content: space-between;
+}
+.pagecontent a, .cart a{
+    font-size: 20px;
+    color: white;
+}
+.tabs {
+    display: inline-flex;
+    justify-content: space-between;
+    width: 60%;
+}
+.home, .fashion, .sport,
+.electronics, .music{
+    padding: 5px;
+    width: 18%;
+    text-align: center;
+}
+.home:hover, .fashion:hover, .sport:hover,
+.electronics:hover, .music:hover{
+    transition: .3s;
+    background-color: rgb(170, 255, 0);
+    border-radius: 10px;
+}
+.current{
+    background-color: yellowgreen;
+    border-radius: 10px;
+}
+.cart {
+    width: 5%;
+    display: inline-flex;
+    justify-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.carts span {
+    color: white;
+}
+.wish, .carts{
+    width: 50%;
+    padding: 5px;
+    text-align: center;
+    display: inline-flex;
+    /* border-left: 1px solid white;
+    border-right: 1px solid white ; */
+}
+.wish:hover, .carts a:hover{
+    transition: .3s;
+    transform: scale(1.1);
+}
+
+
+/* Style Product */
+form {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+.product{
+    width: 100%;
+    display: flex;
+    background-color: whitesmoke;
+
+}
+
+.productcontent{
+    display: inline-flex;
+    width: 90%;
+    padding: 30px;
+    justify-content: space-between;
+    margin: 0px auto;
+}
+.card {
+    font-weight: bold;
+    text-align: center;
+    padding: 10px;
+    background-color: white;
+    border-radius: 10px;
+    border: 3px solid yellowgreen;
+}
+.card .stars > i{
+    color: yellowgreen;
+}
+
+.card img {
+    width: 250px;
+    height: 250px;
+}
+.card button {
+    margin-top: 20px;
+    font-weight: bold;
+    width: 100%;
+    padding: 5px;
+    background-color: yellowgreen;
+}
+.card button:hover{
+    transition: .3s;
+    cursor: pointer;
+    background-color: rgba(154, 205, 50, .9);
+}
+
+
+#cart_count {
+    font-size: 12px;
+    color: black;
+    margin-left: 5px;
+    /* width: ; */
+    text-align: center;
+    padding: 5px;
+    border-radius: 10px;
+    background-color: greenyellow; 
+}
+
+
+/* Style Product End */

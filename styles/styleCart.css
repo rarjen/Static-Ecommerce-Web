@@ -1,0 +1,40 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;400;900&display=swap');
+
+.bold {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 900;
+}
+.regular {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+}
+.thin{
+    font-family: 'Roboto', sans-serif;
+    font-weight: 100;
+}
+
+.shopping-cart {
+    padding: 3% 0;
+}
+
+.cart-items+.cart-items {
+    padding: 2% 0;
+}
+
+.total {
+    padding: 3% 2%;
+}
+
+.buttons {
+    padding: 3% 2%;
+    ;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+.invoice{
+    color: yellowgreen;
+}
